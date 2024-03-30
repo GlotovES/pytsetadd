@@ -18,7 +18,7 @@ jobs:
           python-version: '3.8'
 
     - name: Show Python version
-      run: "python -version"
+      run: python -version
         
 
     - name: Checkout code
