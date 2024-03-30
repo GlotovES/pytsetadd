@@ -5,6 +5,10 @@ on:
       - main
       - jenk
   workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
   
 jobs:
   my_first_job:
@@ -37,6 +41,7 @@ jobs:
       
     - name: Run tests
       uses: onichandame/python-test-action@master
+
 
     - name: Run tests
       run: echo "Tests to be added"
