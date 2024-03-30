@@ -12,10 +12,10 @@ jobs:
 
     steps:
     
-    - name: Set up Python 5
-      uses: actions/setup-python@v5
+    - name: Set up Python 3
+      uses: actions/setup-python@v3.8
       with:
-          python-version: '5'
+          python-version: '3.8'
 
     - name: Show Python version
       run: "python -version"
